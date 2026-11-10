@@ -3,3 +3,11 @@
 
 .card > p + form{margin-top:16px}
 @media(max-width:560px){.tablewrap::before{content:"Swipe horizontally to see all columns →";display:block;color:var(--muted);font-size:12px;padding:4px 0 8px}.side-bottom .link{min-height:44px}}
+
+.tag.bullish{background:#e5f4ea;color:#166e51;border-color:#b5e0c5}
+.tag.bearish{background:#fbeee8;color:#ad3e33;border-color:#f1c7bf}
+.tag.neutral{background:#f0f3f1;color:#576b63;border-color:#d1ded6}
+.similarity-pill{font-size:11px;font-weight:700;color:var(--accent);background:var(--soft);padding:4px 8px;border-radius:6px;white-space:nowrap}
+.admin-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;margin-bottom:20px}
+.admin-badge{font-size:11px;font-weight:800;color:#c97a1e;background:#fef5e7;border:1px solid #fae2b8;border-radius:12px;padding:3px 8px;display:inline-block;margin-top:4px}
+@media(max-width:850px){.admin-grid{grid-template-columns:1fr}}

@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.pglite/
+.env
+.env.local
+*.log
+.pglite*/

@@ -20,6 +20,29 @@ Companies, quotes and funds are fictional. No real orders or monetary transactio
 
 ---
 
+## Mini Project Evaluation Rubric (14 Deliverables)
+
+A complete demonstration mapping for the 14 project evaluation deliverables is maintained in [`docs/DEMO_RUBRIC.md`](docs/DEMO_RUBRIC.md):
+
+| # | Rubric Deliverable | Repository Evidence / Demonstration Location |
+|---|---|---|
+| **1** | **ER Diagram** | [`docs/DEMO_RUBRIC.md`](docs/DEMO_RUBRIC.md#1-er-diagram), [`docs/RESEARCH_ADMIN_DESIGN.md`](docs/RESEARCH_ADMIN_DESIGN.md#3-complete-system-er-diagram) |
+| **2** | **Relational Schema (Keys & Constraints)** | [`docs/DEMO_RUBRIC.md`](docs/DEMO_RUBRIC.md#2-relational-schema-with-keys-relationships-and-constraints), [`sql/schema.sql`](sql/schema.sql) |
+| **3** | **SQL Implementation (DDL with Constraints)** | [`sql/schema.sql`](sql/schema.sql) (Primary/Foreign keys, CHECK, UNIQUE, NOT NULL, DEFAULT, CASCADE) |
+| **4** | **NoSQL / Vector Database Creation** | [`sql/schema.sql`](sql/schema.sql#L1-L47) (`CREATE EXTENSION vector`, `research_note`, HNSW index) |
+| **5** | **Technology Justification** | [`docs/DEMO_RUBRIC.md`](docs/DEMO_RUBRIC.md#5-technology-justification) (PostgreSQL ACID vs standalone vector DBs, Next.js) |
+| **6** | **DML Operations (INSERT, SELECT, UPDATE, DELETE)** | [`app/api/[...path]/route.js`](app/api/[...path]/route.js), [`sql/queries.sql`](sql/queries.sql) |
+| **7** | **Nested, Correlated, Recursive & Join SQL Queries** | [`sql/queries.sql`](sql/queries.sql) (Multi-table JOIN, Subquery, Correlated `EXISTS`, Recursive CTE) |
+| **8** | **Advanced SQL (Procedures/Functions, Triggers, CTEs)** | `execute_paper_trade` (PL/pgSQL), `trg_stock_price_change` (Trigger), `portfolio_view`, CTEs |
+| **9** | **Vector Features & RUD Operations** | [`lib/vector.mjs`](lib/vector.mjs), [`sql/queries.sql`](sql/queries.sql#L26-L34) (Create, Read/Search, Update, Delete) |
+| **10** | **Next.js Interface** | [`app/page.js`](app/page.js) (Investor Dashboard, Market Board, Research Desk, Admin Portal) |
+| **11** | **Backend/API & Database Integration** | [`app/api/[...path]/route.js`](app/api/[...path]/route.js) (REST route handlers, parameterization, Zod validation) |
+| **12** | **Authentication & RBAC (Minimum 2 Roles)** | `app_user.role` (`investor`, `admin`), bcrypt, SHA-256 session tokens, server-side route guards |
+| **13** | **Documentation & Git / GitHub** | Clean history, PR [#3](https://github.com/Debaditya-1729/stocklens-dbms-project/pull/3) merged, Issues [#1](https://github.com/Debaditya-1729/stocklens-dbms-project/issues/1) & [#2](https://github.com/Debaditya-1729/stocklens-dbms-project/issues/2) closed, verified contributors |
+| **14** | **Originality, Individual Contribution & Viva** | Distinct contribution split, educational domain originality, [viva guide](docs/DEMO_RUBRIC.md#14-originality-individual-contribution-and-viva-guide) |
+
+---
+
 ## Key Features
 
 ### 1. Relational Trading & Portfolio Core (Part 1)
@@ -100,6 +123,7 @@ npm run build
 
 ## Project Documentation
 
+- **Mini Project Demo Deliverables & Viva Guide:** [`docs/DEMO_RUBRIC.md`](docs/DEMO_RUBRIC.md)
 - **Investor Core Design & Schema:** [`docs/INVESTOR_DESIGN.md`](docs/INVESTOR_DESIGN.md)
 - **Market Intelligence, Vector Search & Admin Design:** [`docs/RESEARCH_ADMIN_DESIGN.md`](docs/RESEARCH_ADMIN_DESIGN.md)
 - **Verification & Test Report:** [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md)

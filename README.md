@@ -123,7 +123,9 @@ npm run build
 
 ## Project Documentation
 
+- **Consolidated Mini Project Final Report:** [`docs/REPORT.md`](docs/REPORT.md)
 - **Mini Project Demo Deliverables & Viva Guide:** [`docs/DEMO_RUBRIC.md`](docs/DEMO_RUBRIC.md)
+- **Relational Schema & Delete Rules:** [`docs/RELATIONAL_SCHEMA.md`](docs/RELATIONAL_SCHEMA.md)
 - **Investor Core Design & Schema:** [`docs/INVESTOR_DESIGN.md`](docs/INVESTOR_DESIGN.md)
 - **Market Intelligence, Vector Search & Admin Design:** [`docs/RESEARCH_ADMIN_DESIGN.md`](docs/RESEARCH_ADMIN_DESIGN.md)
 - **Verification & Test Report:** [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md)

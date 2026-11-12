@@ -4,29 +4,7 @@ This diagram converts the existing [ER diagram](RESEARCH_ADMIN_DESIGN.md#3-compl
 
 **Legend:** PK = primary key · FK = foreign key · UQ = unique. Arrows point from a foreign key to the primary key it references. A composite primary key contains both marked columns.
 
-```mermaid
-flowchart LR
-  U["<b>app_user</b><br/>id: BIGSERIAL — PK<br/>email: TEXT — UQ<br/>password_hash: TEXT<br/>role: TEXT<br/>cash: NUMERIC(18,2)<br/>created_at: TIMESTAMPTZ"]
-  S["<b>stock</b><br/>id: BIGSERIAL — PK<br/>symbol: VARCHAR(12) — UQ<br/>company: TEXT<br/>sector: TEXT<br/>price: NUMERIC(18,2)<br/>updated_at: TIMESTAMPTZ"]
-  SE["<b>session</b><br/>token_hash: TEXT — PK<br/>user_id: BIGINT — FK<br/>expires_at: TIMESTAMPTZ"]
-  H["<b>holding</b><br/>user_id: BIGINT — PK, FK<br/>stock_id: BIGINT — PK, FK<br/>quantity: INTEGER<br/>avg_cost: NUMERIC(18,4)"]
-  T["<b>trade</b><br/>id: BIGSERIAL — PK<br/>user_id: BIGINT — FK<br/>stock_id: BIGINT — FK<br/>side: TEXT<br/>quantity: INTEGER<br/>price: NUMERIC(18,2)<br/>executed_at: TIMESTAMPTZ"]
-  W["<b>watchlist</b><br/>user_id: BIGINT — PK, FK<br/>stock_id: BIGINT — PK, FK<br/>created_at: TIMESTAMPTZ"]
-  A["<b>stock_price_audit</b><br/>id: BIGSERIAL — PK<br/>stock_id: BIGINT — FK<br/>old_price: NUMERIC(18,2)<br/>new_price: NUMERIC(18,2)<br/>changed_at: TIMESTAMPTZ"]
-  R["<b>research_note</b><br/>id: BIGSERIAL — PK<br/>stock_id: BIGINT — FK<br/>author_id: BIGINT — FK<br/>title: TEXT<br/>content: TEXT<br/>sentiment: TEXT<br/>embedding: vector(64)<br/>created_at: TIMESTAMPTZ<br/>updated_at: TIMESTAMPTZ"]
-  SE -->|user_id| U
-  H -->|user_id| U
-  H -->|stock_id| S
-  T -->|user_id| U
-  T -->|stock_id| S
-  W -->|user_id| U
-  W -->|stock_id| S
-  A -->|stock_id| S
-  R -->|author_id| U
-  R -->|stock_id| S
-  classDef relation fill:#f3f8f5,stroke:#23806b,color:#172a25,stroke-width:1.5px;
-  class U,S,SE,H,T,W,A,R relation;
-```
+![StockLens boxed relational schema](stocklens-relational-schema.svg)
 
 ## Relational notation
 

@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1310" viewBox="0 0 1700 1310">
+<rect width="1700" height="1310" fill="white"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 0 L5 10 Z" fill="#222"/></marker></defs>
+<g font-family="Comic Sans MS, Arial, sans-serif" fill="#111">
+<text x="850" y="44" text-anchor="middle" font-size="27">STOCKLENS — RELATIONAL SCHEMA</text>
+<text x="850" y="78" text-anchor="middle" font-size="17">PK = primary key   •   FK = foreign key   •   UQ = unique   •   Arrows point to the referenced primary key</text>
+<text x="32" y="103" font-size="15">User references</text>
+<text x="175" y="103" font-size="15">Stock references</text>
+<path d="M 100 116 H 394.0 V 140" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 225 255 H 394.0 V 279" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<path d="M 100 116 V 1208" stroke="#222" stroke-width="1.5"/>
+<path d="M 225 255 V 1208" stroke="#222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="320" y="143" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="165" text-anchor="middle" font-size="16" text-decoration="underline">id</text>
+<text x="394.0" y="186" text-anchor="middle" font-size="11.5">BIGSERIAL · PK</text>
+<rect x="468" y="143" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="165" text-anchor="middle" font-size="16">email</text>
+<text x="542.0" y="186" text-anchor="middle" font-size="11.5">TEXT · UQ</text>
+<rect x="616" y="143" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="165" text-anchor="middle" font-size="16">password_hash</text>
+<text x="690.0" y="186" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="764" y="143" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="838.0" y="165" text-anchor="middle" font-size="16">role</text>
+<text x="838.0" y="186" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="912" y="143" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="986.0" y="165" text-anchor="middle" font-size="16">cash</text>
+<text x="986.0" y="186" text-anchor="middle" font-size="11.5">NUMERIC(18,2)</text>
+<rect x="1060" y="143" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1134.0" y="165" text-anchor="middle" font-size="16">created_at</text>
+<text x="1134.0" y="186" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<text x="460" y="133" font-size="19">APP_USER</text>
+<rect x="320" y="282" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="304" text-anchor="middle" font-size="16" text-decoration="underline">id</text>
+<text x="394.0" y="325" text-anchor="middle" font-size="11.5">BIGSERIAL · PK</text>
+<rect x="468" y="282" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="304" text-anchor="middle" font-size="16">symbol</text>
+<text x="542.0" y="325" text-anchor="middle" font-size="11.5">VARCHAR(12) · UQ</text>
+<rect x="616" y="282" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="304" text-anchor="middle" font-size="16">company</text>
+<text x="690.0" y="325" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="764" y="282" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="838.0" y="304" text-anchor="middle" font-size="16">sector</text>
+<text x="838.0" y="325" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="912" y="282" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="986.0" y="304" text-anchor="middle" font-size="16">price</text>
+<text x="986.0" y="325" text-anchor="middle" font-size="11.5">NUMERIC(18,2)</text>
+<rect x="1060" y="282" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1134.0" y="304" text-anchor="middle" font-size="16">updated_at</text>
+<text x="1134.0" y="325" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<text x="460" y="272" font-size="19">STOCK</text>
+<path d="M 542.0 478 V 493 H 100" fill="none" stroke="#222" stroke-width="1.5"/><circle cx="100" cy="493" r="3" fill="#222"/>
+<rect x="320" y="421" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="443" text-anchor="middle" font-size="16" text-decoration="underline">token_hash</text>
+<text x="394.0" y="464" text-anchor="middle" font-size="11.5">TEXT · PK</text>
+<rect x="468" y="421" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="443" text-anchor="middle" font-size="16">user_id</text>
+<text x="542.0" y="464" text-anchor="middle" font-size="11.5">BIGINT · FK</text>
+<rect x="616" y="421" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="443" text-anchor="middle" font-size="16">expires_at</text>
+<text x="690.0" y="464" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<text x="320" y="411" font-size="19">SESSION</text>
+<path d="M 394.0 617 V 632 H 100" fill="none" stroke="#222" stroke-width="1.5"/><circle cx="100" cy="632" r="3" fill="#222"/>
+<path d="M 542.0 617 V 650 H 225" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="6 4"/><circle cx="225" cy="650" r="3" fill="#222"/>
+<rect x="320" y="560" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="582" text-anchor="middle" font-size="16" text-decoration="underline">user_id</text>
+<text x="394.0" y="603" text-anchor="middle" font-size="11.5">BIGINT · PK, FK</text>
+<rect x="468" y="560" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="582" text-anchor="middle" font-size="16" text-decoration="underline">stock_id</text>
+<text x="542.0" y="603" text-anchor="middle" font-size="11.5">BIGINT · PK, FK</text>
+<rect x="616" y="560" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="582" text-anchor="middle" font-size="16">quantity</text>
+<text x="690.0" y="603" text-anchor="middle" font-size="11.5">INTEGER</text>
+<rect x="764" y="560" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="838.0" y="582" text-anchor="middle" font-size="16">avg_cost</text>
+<text x="838.0" y="603" text-anchor="middle" font-size="11.5">NUMERIC(18,4)</text>
+<text x="320" y="550" font-size="19">HOLDING</text>
+<path d="M 542.0 756 V 771 H 100" fill="none" stroke="#222" stroke-width="1.5"/><circle cx="100" cy="771" r="3" fill="#222"/>
+<path d="M 690.0 756 V 789 H 225" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="6 4"/><circle cx="225" cy="789" r="3" fill="#222"/>
+<rect x="320" y="699" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="721" text-anchor="middle" font-size="16" text-decoration="underline">id</text>
+<text x="394.0" y="742" text-anchor="middle" font-size="11.5">BIGSERIAL · PK</text>
+<rect x="468" y="699" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="721" text-anchor="middle" font-size="16">user_id</text>
+<text x="542.0" y="742" text-anchor="middle" font-size="11.5">BIGINT · FK</text>
+<rect x="616" y="699" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="721" text-anchor="middle" font-size="16">stock_id</text>
+<text x="690.0" y="742" text-anchor="middle" font-size="11.5">BIGINT · FK</text>
+<rect x="764" y="699" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="838.0" y="721" text-anchor="middle" font-size="16">side</text>
+<text x="838.0" y="742" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="912" y="699" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="986.0" y="721" text-anchor="middle" font-size="16">quantity</text>
+<text x="986.0" y="742" text-anchor="middle" font-size="11.5">INTEGER</text>
+<rect x="1060" y="699" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1134.0" y="721" text-anchor="middle" font-size="16">price</text>
+<text x="1134.0" y="742" text-anchor="middle" font-size="11.5">NUMERIC(18,2)</text>
+<rect x="1208" y="699" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1282.0" y="721" text-anchor="middle" font-size="16">executed_at</text>
+<text x="1282.0" y="742" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<text x="320" y="689" font-size="19">TRADE</text>
+<path d="M 394.0 895 V 910 H 100" fill="none" stroke="#222" stroke-width="1.5"/><circle cx="100" cy="910" r="3" fill="#222"/>
+<path d="M 542.0 895 V 928 H 225" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="6 4"/><circle cx="225" cy="928" r="3" fill="#222"/>
+<rect x="320" y="838" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="860" text-anchor="middle" font-size="16" text-decoration="underline">user_id</text>
+<text x="394.0" y="881" text-anchor="middle" font-size="11.5">BIGINT · PK, FK</text>
+<rect x="468" y="838" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="860" text-anchor="middle" font-size="16" text-decoration="underline">stock_id</text>
+<text x="542.0" y="881" text-anchor="middle" font-size="11.5">BIGINT · PK, FK</text>
+<rect x="616" y="838" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="860" text-anchor="middle" font-size="16">created_at</text>
+<text x="690.0" y="881" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<text x="320" y="828" font-size="19">WATCHLIST</text>
+<path d="M 542.0 1034 V 1049 H 225" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="6 4"/><circle cx="225" cy="1049" r="3" fill="#222"/>
+<path d="M 690.0 1034 V 1067 H 100" fill="none" stroke="#222" stroke-width="1.5"/><circle cx="100" cy="1067" r="3" fill="#222"/>
+<rect x="320" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="999" text-anchor="middle" font-size="16" text-decoration="underline">id</text>
+<text x="394.0" y="1020" text-anchor="middle" font-size="11.5">BIGSERIAL · PK</text>
+<rect x="468" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="999" text-anchor="middle" font-size="16">stock_id</text>
+<text x="542.0" y="1020" text-anchor="middle" font-size="11.5">BIGINT · FK</text>
+<rect x="616" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="999" text-anchor="middle" font-size="16">author_id</text>
+<text x="690.0" y="1020" text-anchor="middle" font-size="11.5">BIGINT · FK</text>
+<rect x="764" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="838.0" y="999" text-anchor="middle" font-size="16">title</text>
+<text x="838.0" y="1020" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="912" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="986.0" y="999" text-anchor="middle" font-size="16">content</text>
+<text x="986.0" y="1020" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="1060" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1134.0" y="999" text-anchor="middle" font-size="16">sentiment</text>
+<text x="1134.0" y="1020" text-anchor="middle" font-size="11.5">TEXT</text>
+<rect x="1208" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1282.0" y="999" text-anchor="middle" font-size="16">embedding</text>
+<text x="1282.0" y="1020" text-anchor="middle" font-size="11.5">vector(64)</text>
+<rect x="1356" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1430.0" y="999" text-anchor="middle" font-size="16">created_at</text>
+<text x="1430.0" y="1020" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<rect x="1504" y="977" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="1578.0" y="999" text-anchor="middle" font-size="16">updated_at</text>
+<text x="1578.0" y="1020" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<text x="320" y="967" font-size="19">RESEARCH_NOTE</text>
+<path d="M 542.0 1173 V 1188 H 225" fill="none" stroke="#222" stroke-width="1.5" stroke-dasharray="6 4"/><circle cx="225" cy="1188" r="3" fill="#222"/>
+<rect x="320" y="1116" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="394.0" y="1138" text-anchor="middle" font-size="16" text-decoration="underline">id</text>
+<text x="394.0" y="1159" text-anchor="middle" font-size="11.5">BIGSERIAL · PK</text>
+<rect x="468" y="1116" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="542.0" y="1138" text-anchor="middle" font-size="16">stock_id</text>
+<text x="542.0" y="1159" text-anchor="middle" font-size="11.5">BIGINT · FK</text>
+<rect x="616" y="1116" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="690.0" y="1138" text-anchor="middle" font-size="16">old_price</text>
+<text x="690.0" y="1159" text-anchor="middle" font-size="11.5">NUMERIC(18,2)</text>
+<rect x="764" y="1116" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="838.0" y="1138" text-anchor="middle" font-size="16">new_price</text>
+<text x="838.0" y="1159" text-anchor="middle" font-size="11.5">NUMERIC(18,2)</text>
+<rect x="912" y="1116" width="148" height="57" fill="white" stroke="#222" stroke-width="1.5"/>
+<text x="986.0" y="1138" text-anchor="middle" font-size="16">changed_at</text>
+<text x="986.0" y="1159" text-anchor="middle" font-size="11.5">TIMESTAMPTZ</text>
+<text x="320" y="1106" font-size="19">STOCK_PRICE_AUDIT</text>
+<text x="320" y="1275" font-size="15">HOLDING and WATCHLIST: combined primary key (user_id, stock_id). Dashed arrows refer to STOCK.</text>
+</g></svg>
